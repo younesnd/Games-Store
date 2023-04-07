@@ -85,6 +85,6 @@ export const gamesSlice = createSlice({
   },
 })
 
-export const { removeGame, addGame, resetGames, filterName } =
+export const { resetGames,removeGame, addGame,  filterName } =
   gamesSlice.actions
 export default gamesSlice.reducer
