@@ -7,13 +7,13 @@ export type GamesState = {
   games: SliceGame[]
   count: { count: number; sum: number }
   GreenBag: boolean
-  FilterName : string
+  FilterName: string
 }
 const initialState: GamesState = {
   games: initialGames,
   count: { count: 0, sum: 0 },
   GreenBag: false,
-  FilterName : ""
+  FilterName: '',
 }
 
 type RemoveType = {
@@ -79,12 +79,12 @@ export const gamesSlice = createSlice({
     resetGames: () => {
       return initialState
     },
-    filterName : (state,action : PayloadAction<string>) => {
-      state.FilterName=action.payload
-    }
-    
+    filterName: (state, action: PayloadAction<string>) => {
+      state.FilterName = action.payload
+    },
   },
 })
 
-export const { addGame, removeGame, resetGames , filterName } = gamesSlice.actions
+export const { removeGame, addGame, resetGames, filterName } =
+  gamesSlice.actions
 export default gamesSlice.reducer
