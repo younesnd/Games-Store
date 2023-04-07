@@ -1,0 +1,4 @@
+.divStyle {
+  @apply container mr-5 h-14 flex pr-7 justify-between bg-[#1a1a1a] mb-4 mt-3 items-center 
+  space-x-1 border-transparent rounded-2xl w-full ml-10 shadow-md shadow-gray-600;
+}

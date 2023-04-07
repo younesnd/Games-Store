@@ -1,0 +1,10 @@
+.navStyle {
+  @apply w-full flex relative justify-between items-center px-8 h-16 z-50 pr-8 align-middle ;
+}
+.navDev {
+  @apply flex z-10 bg-opacity-50 font-gloock text-white my-3 space-x-10;
+}
+.inputStyle {
+    @apply  bg-[#262626] font-roboto h-8 text-sm rounded-lg 
+       p-2.5 placeholder-gray-500 w-96;
+}

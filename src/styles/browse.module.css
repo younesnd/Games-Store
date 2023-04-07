@@ -1,0 +1,11 @@
+@tailwind components;
+@tailwind utilities;
+
+.buttonStyle {
+    @apply w-44 text-white bg-[#262626] hover:touch-pinch-zoom focus:outline-none focus:ring-4 focus:ring-gray-300 font-Inter
+    rounded-lg text-xs text-left px-5 py-2.5 mr-2 mb-2  hover:bg-slate-500 ;
+}
+.buttonStyle_2 {
+    @apply w-36 text-white bg-[#262626] hover:touch-pinch-zoom focus:outline-none focus:ring-4 focus:ring-gray-300 font-gloock
+    rounded-lg text-xs  px-5 py-2.5 mr-2 mb-2  hover:bg-slate-500 text-center ;
+}

@@ -1,0 +1,9 @@
+.quickNav {
+  @apply flex flex-col relative z-20 rounded-3xl text-white backdrop-blur-md bg-white/30  h-4/5;
+}
+.gameStore {
+  @apply relative z-20 container rounded-3xl backdrop-blur-md  bg-white/30 text-white mr-5 w-full h-2/4 ml-8 mt-11;
+}
+.underGameStore {
+  @apply relative flex place-items-center z-20 rounded-2xl backdrop-blur-md  bg-white/30 text-white w-full mr-5 h-14 ml-8 mt-3;
+}

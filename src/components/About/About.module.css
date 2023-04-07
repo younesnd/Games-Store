@@ -1,0 +1,11 @@
+.ButtonStyle {
+  @apply container justify-end mr-5 h-14 flex pr-7  bg-[#262626] items-center space-x-1 border-transparent  rounded-b-2xl
+   w-full ml-10  shadow-md shadow-gray-600;
+}
+.divStyle {
+  @apply container bg-[#1a1a1a] h-44 flex flex-col border-transparent overflow-auto overscroll-contain rounded-t-3xl 
+            w-full pl-5 pt-5 ml-10 mt-8 shadow-inner shadow-gray-600;
+}
+.Sbb {
+  @apply container  mr-5 h-60 flex flex-col pl-7 pt-5 bg-[#262626]  pb-4  border-transparent shadow-sm rounded-b-2xl w-full ml-10;
+}

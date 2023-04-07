@@ -1,0 +1,8 @@
+.buttonStyle {
+    @apply mt-2 flex space-x-2 w-36 py-2.5 px-5 mr-2 mb-2 ml-5 h-9 pt-2 items-center align-middle
+     hover:bg-rose-300  text-gray-900 focus:outline-none bg-white rounded-2xl;
+  }
+  .buttonNav {
+    @apply mt-2 flex items-center  text-[20px]  justify-center space-x-2 w-56 py-2.5 px-5 
+    mr-2 mb-2 ml-5 pt-2  bg-white hover:bg-rose-300  text-gray-900 focus:outline-none rounded-2xl;
+  }
