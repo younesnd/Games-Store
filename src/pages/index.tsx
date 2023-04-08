@@ -13,6 +13,7 @@ import type { NextPage } from 'next'
 
 import styles from '/src/styles/Home.module.css'
 
+import Link from 'next/link'
 import Button from '@/components/Button/Button'
 import NavBar from '@/components/NavBar/NavBar'
 
@@ -47,11 +48,11 @@ const Home: NextPage<HomeProps> = () => {
             </p>
           </div>
           <div className={styles.underGameStore}>
-            <Button
+            <Link href="/browse"><Button
               IconPark={<AllApplication theme='filled' size='20' fill='#333' />}
               variant='buttonStyle'
               name='Browse'
-            />
+            /> </Link>
 
             <Button
               IconPark={<Cube theme='filled' size='20' fill='#333' />}

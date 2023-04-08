@@ -4,6 +4,8 @@ import CartItem from '../CartItem/CartItem'
 import styles from './Cart.module.css'
 import { resetGames } from '@/lib/GamesApiSlice'
 import { useAppSelector, useAppDispatch } from '@/lib/hook'
+// eslint-disable-next-line import/order
+import { ArrowCircleRight } from '@icon-park/react'
 type CartType = (M: boolean) => any
 
 const Cart = (props: { setOpen: CartType }) => {
@@ -47,9 +49,12 @@ const Cart = (props: { setOpen: CartType }) => {
             
           ))}
 
-          <div className='relative bottom-0 flex items-center justify-end p-6 self-start z-30 bg-[#1a1a1a] rounded-b'>
-            <span className='relative text-slate-300'>Total : ${games.count.sum}</span>
-          </div>
+          <div className='fixed bottom-0 flex self-start p-6 z-30 bg-[#1a1a1a] rounded-b'>
+            <span className='relative text-slate-300 '>Total : ${games.count.sum}</span></div>
+            <button className='flex fixed bottom-0 p-6 self-end items-center space-x-1 hover:text-indigo-600'>
+              <span className=''>Checkout</span>
+              <ArrowCircleRight />
+            </button>
         </div>
       </div>
     </motion.div>

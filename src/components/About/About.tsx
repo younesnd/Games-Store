@@ -1,16 +1,17 @@
 import { Down, Up } from '@icon-park/react'
 
+import { motion } from 'framer-motion'
 import { useState } from 'react'
 import styles from './About.module.css'
-
-type AboutTypeProps<T=string> = {
-  description?: T
-  name?: T
-  release?: T
-  platforms?: T
-  genre?: T
-  developers?: T
-  publishers?: T
+type AboutTypeProps = {
+  description?: string
+  name?: string
+  release?: string
+  platforms?: string
+  genre?: string
+  developers?: string
+  publishers?: string
+  link? : string
 }
 
 const About = (props: AboutTypeProps) => {
@@ -22,6 +23,7 @@ const About = (props: AboutTypeProps) => {
     genre,
     developers,
     publishers,
+    link
   } = props
   const [openMore, setOpenMore] = useState(false)
   return (
@@ -33,17 +35,17 @@ const About = (props: AboutTypeProps) => {
         </p>
       </div>
       {openMore ? (
-        <button className='flex ' onClick={() => setOpenMore(false)}>
+        <motion.button transition={{ duration: 0.5 }} className='flex' onClick={() => setOpenMore(false)}>
           <div className={styles.Sbb}>
             <div className='grid grid-rows-6 ml-5 place-items-start'>
-              <span className='text-white font-roboto'>
+              <a className='text-white font-gloock leading-6 text-[22px]' href={link}>
                 {`${name} website`}
-              </span>
-              <span className='text-gray-400 font-roboto'>{`Released:${release}`}</span>
-              <span className='text-gray-400 font-roboto'>{`Platforms: ${platforms}`}</span>
-              <span className='text-gray-400 font-roboto'>{`Main Genre: ${genre}`}</span>
-              <span className='text-gray-400 font-roboto'>{`Developers: ${developers}`}</span>
-              <span className='text-gray-400 font-roboto'>{`Publishers: ${publishers}`}</span>
+              </a>
+              <span className='text-gray-500 font-roboto'>{`Released: ${release}`}</span>
+              <span className='text-gray-500 font-roboto'>{`Platforms: ${platforms}`}</span>
+              <span className='text-gray-500 font-roboto'>{`Main Genre: ${genre}`}</span>
+              <span className='text-gray-500 font-roboto'>{`Developers: ${developers}`}</span>
+              <span className='text-gray-500 font-roboto'>{`Publishers: ${publishers}`}</span>
             </div>
 
             <div className='flex self-end  place-self-end p-2'>
@@ -53,7 +55,7 @@ const About = (props: AboutTypeProps) => {
               </div>
             </div>
           </div>
-        </button>
+        </motion.button>
       ) : (
         <button className='flex' onClick={() => setOpenMore(true)}>
           <div className={styles.ButtonStyle}>

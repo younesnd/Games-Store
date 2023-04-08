@@ -41,7 +41,7 @@ export default function Browse(props: HomeProps) {
           <div className='flex flex-col text-6xl font-gloock text-white ml-14 mt-5 space-y-6'>
             <div className='flex flex-col'>
               <span className=''> Trending and interesting </span>
-              <span className='text-[14px] font-roboto mt-2'>
+              <span className='text-[12px] font-gloock mt-2'>
                 Based on player counts and ratings
               </span>
             </div>

@@ -7,5 +7,5 @@
             w-full pl-5 pt-5 ml-10 mt-8 shadow-inner shadow-gray-600;
 }
 .Sbb {
-  @apply container  mr-5 h-60 flex flex-col pl-7 pt-5 bg-[#262626]  pb-4  border-transparent shadow-sm rounded-b-2xl w-full ml-10;
+  @apply container  mr-5 h-52 flex flex-col pl-7 pt-5 bg-[#262626]  pb-4  border-transparent shadow-sm rounded-b-2xl w-full ml-10;
 }

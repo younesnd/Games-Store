@@ -16,7 +16,7 @@ const Button = (props: typeButton) => {
         className={styles[props.variant]}
       >
         {props.IconPark}
-        <span className='font-groock text-[17px]'>{props.name}</span>
+        <span className='font-groock text-[17px] '>{props.name}</span>
       </motion.button>
     </>
   )

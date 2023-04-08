@@ -50,6 +50,7 @@ export default function Games() {
         release={data?.game.release}
         developers={data?.game.developers}
         platforms={data?.game.platforms}
+        link={data?.game.link}
       />
       <AddTo price={data?.game.price} name={data?.game.name} />
     </div>
