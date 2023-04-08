@@ -17,7 +17,7 @@ const Cart = (props: { setOpen: CartType }) => {
     dispatch(resetGames())
   }
   const { setOpen } = props
-  
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -31,7 +31,9 @@ const Cart = (props: { setOpen: CartType }) => {
         <div className={styles.style_2}>
           {games.count.count > 0 ? (
             <div className='flex  space-x-28 py-4 rounded-t'>
-              <span className='font-gloock text-3xl'>{games.count.count} games</span>
+              <span className='font-gloock text-3xl'>
+                {games.count.count} games
+              </span>
               <button className='text-sm font-mono' onClick={handleClear}>
                 Clear
               </button>
@@ -42,19 +44,21 @@ const Cart = (props: { setOpen: CartType }) => {
             </div>
           )}
 
-          {games.games.map((item) => (
-                item.name != '' 
-           ? (<CartItem key={item.id} price={item.price} name={item.name} />)
-           :null
-            
-          ))}
+          {games.games.map((item) =>
+            item.name != '' ? (
+              <CartItem key={item.id} price={item.price} name={item.name} />
+            ) : null
+          )}
 
           <div className='fixed bottom-0 flex self-start p-6 z-30 bg-[#1a1a1a] rounded-b'>
-            <span className='relative text-slate-300 '>Total : ${games.count.sum}</span></div>
-            <button className='flex fixed bottom-0 p-6 self-end items-center space-x-1 hover:text-indigo-600'>
-              <span className=''>Checkout</span>
-              <ArrowCircleRight />
-            </button>
+            <span className='relative text-slate-300 '>
+              Total : ${games.count.sum}
+            </span>
+          </div>
+          <button className='flex fixed bottom-0 p-6 self-end items-center space-x-1 hover:text-indigo-600'>
+            <span className=''>Checkout</span>
+            <ArrowCircleRight />
+          </button>
         </div>
       </div>
     </motion.div>

@@ -35,7 +35,9 @@ const About = (props: AboutTypeProps) => {
         </p>
       </div>
       {openMore ? (
-        <motion.button transition={{ duration: 0.5 }} className='flex' onClick={() => setOpenMore(false)}>
+        <motion.button 
+        
+       className='flex' onClick={() => setOpenMore(false)}>
           <div className={styles.Sbb}>
             <div className='grid grid-rows-6 ml-5 place-items-start'>
               <a className='text-white font-gloock leading-6 text-[22px]' href={link}>
