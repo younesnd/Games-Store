@@ -36,7 +36,9 @@ const About = (props: AboutTypeProps) => {
       </div>
       {openMore ? (
         <motion.button 
-        
+        initial={{ opacity: 0, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2.1 }}
        className='flex' onClick={() => setOpenMore(false)}>
           <div className={styles.Sbb}>
             <div className='grid grid-rows-6 ml-5 place-items-start'>

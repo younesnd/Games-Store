@@ -32,11 +32,12 @@ export default function Games() {
             <span className=''>Store </span>
           </div>
         </Link>
-        <span className=' text-white font-gloock lg:text-6xl md:text-3xl md:px-2 lg:mx-12 md:mx-8 lg:px-5 md:py-8 py-5 mb-2 mt-5 '>
+        <span className=' text-white font-gloock lg:text-6xl md:text-2xl md:px-2 lg:mx-12 md:mx-8 lg:px-5 md:py-8 py-5 mb-2 mt-5 '>
           {data?.game.name}
         </span>
       </div>
-      <Slider
+      
+      <Slider 
         Image={data?.game.footage?.[0]}
         Image_2={data?.game?.footage[1]}
         Image_3={data?.game?.footage[2]}

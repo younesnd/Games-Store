@@ -1,10 +1,10 @@
 .SliderStyle {
-  @apply container w-3/4 flex flex-col rounded-2xl shadow-md shadow-gray-600 bg-[#262626] h-96;
+  @apply container w-3/4 flex flex-col rounded-2xl shadow-md shadow-gray-600 bg-[#262626] lg:h-96 md:h-80 md:w-80;
 }
 .ButtonStyle {
   @apply inline-flex items-center justify-center w-8 h-8 transition duration-300 border
    rounded-full border-slate-700 bg-white/20 text-slate-700 hover:border-slate-900 hover:text-slate-900 
-   focus-visible:outline-none lg:h-12 lg:w-1;
+   focus-visible:outline-none lg:h-8 lg:w-8;
 }
 .SpanStyle {
   @apply block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none;

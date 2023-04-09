@@ -74,7 +74,7 @@ const Slider = (props: SliderType) => {
               viewBox='0 0 24 24'
               strokeWidth='1.5'
               stroke='currentColor'
-              className='w-5 h-5'
+              className='w-3 h-3'
             >
               <title>prev slide</title>
               <path
