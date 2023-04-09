@@ -15,3 +15,4 @@ An e-commerce store, imitating a Game Store, built with Next. Includes dedicated
 You can see images and a GIF of the project in user interaction below. The user starts on the landing page, navigates through the browse section, selects a game, adds it to their cart and opens the cart. The GIF does not show all features of the shop, it only shows the most elementary user interactions. <br /> <br />
 
 ![](/public/acceuil.png)
+![](/public/preview2.png)
