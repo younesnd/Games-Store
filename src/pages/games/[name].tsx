@@ -20,9 +20,9 @@ export default function Games() {
   return (
     <div className='h-full min-h-screen bg-black grid grid-rows-[auto,auto,0.6fr, auto]'>
       <NavBar search={true} handleSerch={() => true} />
-      <div className='flex justify-between align-middle px-2'>
+      <div className='flex justify-between align-middle md:px-2'>
         <Link href='/browse'>
-          <div className='flex text-gray-400 text-[24px] px-5 py-8 mb-2 ml-8 items-center space-x-2 font-Inter mt-5 '>
+          <div className='flex text-gray-400 lg:text-[24px] md:text-md px-5 py-12 mb-2 ml-8 items-center space-x-2 font-Inter mt-5 '>
             <LeftSmall
               theme='outline'
               size='30'
@@ -32,7 +32,7 @@ export default function Games() {
             <span className=''>Store </span>
           </div>
         </Link>
-        <span className=' text-white font-gloock text-6xl mx-12 px-5 py-5 mb-2 mt-5 '>
+        <span className=' text-white font-gloock lg:text-6xl md:text-3xl md:px-2 lg:mx-12 md:mx-8 lg:px-5 md:py-8 py-5 mb-2 mt-5 '>
           {data?.game.name}
         </span>
       </div>

@@ -61,8 +61,8 @@ const Card = (
         </button>
         <span className=' text-white font-roboto'>${price}</span>
       </div>
-      <h1 className=' font-gloock text-xl text-white m-2'>{name}</h1>
-      <button className='self-end m-2 text-white' onClick={handleEmoji}>
+      <h1 className=' font-gloock lg:text-xl md:text-lg text-white m-2'>{name}</h1>
+      <button className='self-end lg:m-2  text-white' onClick={handleEmoji}>
         {emoji}
       </button>
     </div>

@@ -41,7 +41,7 @@ export default function Browse(props: HomeProps) {
           <div className='flex flex-col text-6xl font-gloock text-white ml-14 mt-5 space-y-6'>
             <div className='flex flex-col'>
               <span className=''> Trending and interesting </span>
-              <span className='text-[12px] font-gloock mt-2'>
+              <span className='text-[12px] font-roboto mt-2'>
                 Based on player counts and ratings
               </span>
             </div>
@@ -54,7 +54,7 @@ export default function Browse(props: HomeProps) {
               </button>
             </div>
           </div>
-          <div className='grid grid-cols-3 ml-16 mt-4 gap-y-5 gap-x-5'>
+          <div className='grid lg:grid-cols-3 md:grid-cols-2 ml-16 mt-4  lg:gap-5 md:gap-3'>
             {filterName === ''
               ? gamesList?.games.map((item) => {
                   return (

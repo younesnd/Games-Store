@@ -30,10 +30,11 @@ const NavBar = (props: NavBarTypesProps) => {
           <NintendoSwitch theme='outline' size='24' fill='#ffffff' />
           <div className='text-lg'>Game Store </div>
         </Link>
+        {!search ? (
         <Link href='/browse' className='flex space-x-3'>
           <Shopping theme='outline' size='24' fill='#ffffff' />
           <div className='text-lg'>Browse Store</div>
-        </Link>
+        </Link> ) :null }
       </div>
       <div className={styles.navDev}>
         {search ? (
